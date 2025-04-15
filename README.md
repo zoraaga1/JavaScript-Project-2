@@ -1,0 +1,1 @@
+# Gomycode JavaScript second checkpoint.
