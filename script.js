@@ -1,12 +1,15 @@
 // String Manipulation Functions:
 //Reverse a String
 function stringReverse(string) {
-    let reversedString = '';
-    for (let i = string.length - 1; i >= 0; i--) {
-        let stringChar = string[i];
-        reversedString += stringChar;
+    let arr = phrase.split(' ')
+    let arr2 = [];
+    for (let i = 0; i < arr.length; i++) {
+        let word = arr[i];
+        let maj = word.charAt(0).toUpperCase() + word.slice(1);
+        arr2.push(maj);
     }
-    return reversedString;
+    return arr2.join(' ');
+
 }
 
 //Count Characters
@@ -15,9 +18,15 @@ function countChar(string) {
 }
 
 //Capitalize Words
-function capitalize(string) {
-    return string.toUpperCase();
-
+function capitalizechar(phrase) {
+    let arr = phrase.split(' ');
+    let arr2 = [];
+    for (let i = 0; i < arr.length; i++) {
+        let word = arr[i];
+        let maj = word.charAt(0).toUpperCase() + word.slice(1);
+        arr2.push(maj);
+    }
+    return arr2.join(' ');
 }
 
 // Array Functions:
